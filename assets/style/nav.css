@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 200vh;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 9999999999999;
+    background-color: #f5f2f2;
+    padding: 10px 0;
+}
+
+.container {
+    top: 0;
+    height: 15px;
+    padding: 30px;
+    /* width: 90% !important; */
+    margin-left: 90px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 50px;
+}
+
+#logo:hover {
+    color: #D0A144;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: center;
+    flex-grow: 2;
+}
+
+.nav-links ul li {
+    flex-direction: column;
+    margin: auto 20px;
+}
+
+.nav-links ul li a {
+    font-size: 14px;
+    color: #737373;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.nav-button {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 47%;
+    height: 30px;
+}
+
+
+.nav-button i {
+    font-size: 30px;
+    color: black;
+}
+
+.nav-button button {
+    background-color: #f5f2f2;
+    border: #f5f2f2;
+    cursor:pointer;
+}
+
+#nav-button::after {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+}
+
+#nav-button:active::after {
+    width: 100%;
+    cursor: pointer;
+}
+
+#nav-button ul {
+    right: -49px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    top: -25px;
+    width: 200px;
+    background-color: white;
+    border-radius: 38px 10px 10px 38px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+}
+
+#nav-button:focus ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+#nav-button ul li {
+    display: block;
+    border: 1px;
+    border-radius: 90px;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#nav-button ul li a {
+    font-size: 14px;
+    color: #737373;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#nav-button ul li a:hover {
+    color: #f5f2f2;
+}
+
+#nav-button ul li:hover {
+    color: white;
+    background-color: #295c7a9e;
+}
+
+
+#home {
+    position: relative;
+}
+
+#home::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #295C7A;
+    transition: .3s;
+}
+
+#home:hover::after {
+    width: 100%;
+}
+
+#home ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    top: calc(100% + 10px);
+    width: 200px;
+    background-color: white;
+    border-radius: 38px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+}
+
+#home:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+#home ul li {
+    border: 1px;
+    border-radius: 90px;
+    display: block;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#home ul li:hover {
+    background-color: #d0a14482;
+}
+
+#product {
+    position: relative;
+}
+
+#product::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #295C7A;
+    transition: .3s;
+}
+
+#product:hover::after {
+    width: 100%;
+}
+
+#product ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    top: calc(100% + 10px);
+    width: 200px;
+    background-color: white;
+    border-radius: 38px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+}
+
+#product:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+#product ul li {
+    display: block;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    border: 1px;
+    border-radius: 90px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#product ul li:hover {
+    background-color: #d0a14482;
+}
+
+#pricing {
+    position: relative;
+}
+
+#pricing::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #295C7A;
+    transition: .3s;
+}
+
+#pricing:hover::after {
+    width: 100%;
+}
+
+#pricing ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    top: calc(100% + 10px);
+    width: 200px;
+    background-color: white;
+    border-radius: 38px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+}
+
+#pricing:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+#pricing ul li {
+    display: block;
+    border: 1px;
+    border-radius: 90px;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#pricing ul li:hover {
+    background-color: #d0a14482;
+}
+
+#contact {
+    position: relative;
+}
+
+#contact::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #295C7A;
+    transition: .3s;
+}
+
+#contact:hover::after {
+    width: 100%;
+}
+
+#contact ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    top: calc(100% + 10px);
+    width: 200px;
+    background-color: white;
+    border-radius: 38px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+}
+
+#contact:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+#contact ul li {
+    display: block;
+    border: 1px;
+    border-radius: 90px;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#contact ul li:hover {
+    background-color: #d0a14482;
+}
